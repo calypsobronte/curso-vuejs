@@ -25,6 +25,11 @@
       <ul>
         <li v-for="(list, i) in prices" :key="list"> {{i}} - {{list}}</li>
       </ul>
+
+      <ul>
+        <li v-for="(day, i) in pricesWithDays" :key="day"> {{i}} en el día {{day.day}} su valor fue de {{day.value}}
+        </li>
+      </ul>
     </h1>
   </div>
 
